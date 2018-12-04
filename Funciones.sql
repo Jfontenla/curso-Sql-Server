@@ -82,4 +82,12 @@ UNA FUNCION ESCALAR ES IGUAL A UNA EXPRESION Y SE PUEDEN USAR COMO TALES
 		RETURN; 
 		END;
 
+
+	RESTRICCIONES PARA LA UTILIZACION DE FUNCIONES
+	1º NO PUEDEN AFECTAR AL ESTADO DE LA BASE DE DATOS
+		No se puede Insertar, Modificar o Eliminar Datos, se puede usar tablas temporales, o variables
+		No pueden cambiar la configuracion del sistema
+		Algunas funciones No-Deterministas (NEWID, RAND)
+
+		ES IMPORTANTE CONSULTAR LA DOCUMENTACION DEL MANEJADOR DE BASE DE DATOS.
  */
